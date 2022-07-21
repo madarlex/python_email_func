@@ -11,6 +11,7 @@ out_path = os.path.join(current_path, "output_emails.json")
 err_path = os.path.join(current_path, "errors.csv")
 sys_argv = [template_path, cus_path, out_path, err_path]
 
+
 def test_sending_email(mocker):
     with mock.patch("modules.email_util.send_email") as mock_send_email_func:
         spy_get_template = mocker.spy(sending_email, "get_template")
