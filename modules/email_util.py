@@ -7,6 +7,7 @@ def send_email(email_template, from_email_pass):
     """
     send emails
     :param email_template: env configurations
+    :param from_email_pass: sending email password
     :return: none
     """
 
